@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form SMK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    .bg-gradient {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+    }
+
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient flex items-center justify-center">
+  <div class="bg-gradient p-10 rounded-lg shadow-2xl max-w-lg w-full fade-in">
+
+    <h2 class="text-3xl font-bold text-center mb-8">Sign Up</h2>
+
+    <div class="text-center mb-4">
+      <button class="bg-indigo-600 text-white px-12 py-3 rounded-md hover:bg-indigo-700 transition duration-300">
+        <i class="fa-brands fa-google text-xl"></i>
+        <span class="font-semibold ml-2">Sign Up With Google</span>
+      </button>
+    </div>
+
+    <div class="text-center mb-4">
+      <button class="bg-gray-800 text-white px-12 py-3 rounded-md hover:bg-gray-900 transition duration-300">
+        <i class="fa-brands fa-github text-xl"></i>
+        <span class="font-semibold ml-2">Sign Up With GitHub</span>
+      </button>
+    </div>
+
+    <p class="text-center text-white mb-8"><a href="#" class="hover:text-indigo-200">or sign up with e-mail</a></p>
+
+    <form action="">
+      <div class="mb-4">
+        <input type="text" placeholder="Username" class="w-full bg-indigo-100 pr-4 pl-4 py-3 rounded-md placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <div class="mb-4">
+        <input type="password" placeholder="Password" class="w-full bg-indigo-100 pr-4 pl-4 py-3 rounded-md placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <div class="mb-4">
+        <input type="email" placeholder="e-mail" class="w-full bg-indigo-100 pr-4 pl-4 py-3 rounded-md placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500 peer invalid:ring-2 invalid:ring-pink-500">
+        <p class="text-sm text-pink-600 invisible peer-invalid:visible">Email Tidak Valid</p>
+      </div>
+
+      <div class="text-center mb-4">
+        <button class="bg-violet-500 text-white w-full py-3 rounded-md hover:bg-violet-600 transition duration-300">
+          <i class="fa-solid fa-user-plus text-xl"></i>
+          <span class="font-semibold ml-2">Sign In</span>
+        </button>
+      </div>
+
+      <div class="text-center">
+        <a href="sudah-punya-akun.html" class="text-white text-xl font-semibold">Already have an account?<span class="text-sky-500 hover:text-sky-600"> Log In</span></a>
+      </div>
+      <p class="text-center text-white mt-6">I agree to abide by SMK TI Annajiyah <a href="#" class="underline hover:text-indigo-200">Terms of Service</a> and its <a href="#" class="underline hover:text-indigo-200">Privacy Policy</a>.</p>
+    </form>
+  </div>
+</body>
+</html>
